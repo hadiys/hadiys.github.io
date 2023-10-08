@@ -54,7 +54,7 @@ footer {
     background-color: #aac7af;
 }
 
-a:visited {
+a:link, a:visited {
     color: inherit;
 }
 
