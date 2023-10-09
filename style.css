@@ -1,0 +1,37 @@
+/* Once I get into CSS, padding and margins should be reset to start from a clean slate */
+/* I like to use borders on everything which acts as a visual 'scaffolding' */
+* {  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    /* I like to have the borders included in the sizing of the box */
+}
+
+/* Using google fonts. Very handy. */
+@font-face { 
+    font-family: "Montserrat";
+    src: url('./Fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
+    url('./Fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype')
+}
+
+/* Applying the current standard font-size for webpages */
+html {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    /* height: 100%; <- this will make the document's height only the viewport's height */
+    background-color:#dadeda;
+    color: black;
+}
+
+/* The body will act as a flexbox for all my content. So I will do flex-direction: column on the body */
+/* I will consider recreating the home page with grid as the main container and see the difference */
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+

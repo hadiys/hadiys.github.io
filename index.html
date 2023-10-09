@@ -2,65 +2,66 @@
 <html>
     <head>
         <title>Hadi Saleh</title>
-        <link href="./index.css" type="text/css" rel="stylesheet">
+        <link href="./style.css" type="text/css" rel="stylesheet">
         <script></script>
-        <meta charset="en-US">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body><!--Body is the main container of all pages' content-->
-        <!--Content divided into nav, header, main, and footer-->
+        <!--Content divided into nav, main, and footer-->
 
         <!-- nav -->
         <nav>
+            <h1><span class="name-style">H</span>adi <span class="name-style">S</span>aleh</h1>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <!-- <li><a href="#">Contact</a></li> -->
+                <li><a href="./index.html">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <!-- header -->
-        <header>
-            <h1><span class="name-style">H</span>adi <span class="name-style">S</span>aleh</h1>
-            <h2>Aspiring Software Engineer</h2>
-        </header>
-
         <!-- main -->
         <main>
-            <section id="blog-container"> <!--#blog-container will be a 2x1 grid-->
-                <h2 id="blog-section-heading">Blog</h2>
-                <div id="blog-articles-container"><!--This will be a flexbox (default row direction in order to appear horizontally on wide screens)-->
-                    <a href="#" class="article" id="article-1"><!--Again, the use of id and class to declare uniqueness and completeness, and similarity and conformity respectively-->
-                            <div class="article-title"><h3>How AI helps learning</h3></div>
-                            <div class="article-description"><p>With the rise of conversational bots, we are taking a look at some useful tips to incorporate into our learning journey with the help of AI tools such as ChatGPT among many others.</p></div>
-                            <div class="read-more-sign">Read more >></div>
-                    </a>
-                    <a href="#" class="article" id="article-2">
-                            <div class="article-title"><h3>2023 trends in AI</h3></div>
-                            <div class="article-description"><p>LLMs (Large Language Models) have demonstrated strong potential. Other technologies like GANs and RNNs are catching up and they may just surprise AI engineers.</p></div>
-                            <div class="read-more-sign">Read more >></div>
-                    </a>
-                    <a href="#" class="article" id="article-3">
-                            <div class="article-title"><h3>What is SRE?</h3></div>
-                            <div class="article-description"><p>SRE stands for Site Reliability Engineering. Reliability is a keyword where the article branches off and describes what it means and how a software engineer takes responsibility for it.</p></div>
-                            <div class="read-more-sign">Read more >></div>
-                    </a>
-                    <a href="#" class="article" id="article-4">
-                            <div class="article-title"><h3>How I built a Portfolio Website from scratch</h3></div>
-                            <div class="article-description"><p>Using just HTML, CSS, and JavaScript, this article descibes the logical flow, structure, decision-making at every step of the process.</p></div>
-                            <div class="read-more-sign">Read more >></div>
-                    </a>
-                </div>
+            <h2>About me</h2>
+            <p>Hello! My name is Hadi Saleh.<br>I am on a journey to learn software engineering, studying the Full Stack Engineer course on <a href="https://www.codecademy.com">Codecademy</a> to acquire breadth of knowledge while aiming to go more in depth with backend engineering. 
+                <br>In the future, I hope to become a Site-reliability Engineer or be in a similar role because I am excited by the challenge of maintaining the availability and functionality of large-scale systems.<br>  
+            </p>
+
+            <img src="./Media/profile_pic.JPG" alt="Hadi Saleh's profile picture" width="250px">
+
+            <h2>Skills</h2>
+            <section id="skills-section">
+                <div class="skill">Java</div>
+                <div class="skill">PHP</div>
+                <div class="skill">mySQL</div>
+                <div class="skill">C++</div>
+                <div class="skill">JUCE</div>
+                <div class="skill">Max</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">Python</div>
+                <div class="skill">Golang</div>
+                <div class="skill">Bash</div>
             </section>
+
+            <h2>Projects</h2>
+            <section id="projects-section">
+                <div class="project">Full-stack web app as a fitness website</div>
+                <div class="project">16-step sequencer Max Device</div>
+            </section>
+
+            <aside id="short-quote">
+                <p>Be sure to come back for updates about my learning journey, blogs (coming soon!) and new projects that I`m looking forward to show the world!</p>
+            </aside>
         </main>
 
         <!-- footer -->
         <footer>
-            <p>e-mail: saleh.hadiyasser@hotmail.com</p>
-            <ul id="social-links"> <!--Note the use of id vs class: id represents a whole, unique element. Class targeting is used on elements that share the same style/characteristics-->
-                <li class="social-link"><a href="#">LinkedIn</a></li>
-                <li class="social-link"><a href="#">GitHub</a></li>
-            </ul>
+            <p>Made in Dublin, Ireland</p>
+            <figure>
+                <img src="" alt="Hadi Saleh's signature">
+                <figcaption>Hadi Saleh</figcaption>
+            </figure>
         </footer>
     </body>
 </html>
